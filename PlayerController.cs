@@ -76,9 +76,9 @@ namespace Platformer3D
                 //Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
                 
                 //Move Player
-                
+                charController.Move(moveDirection * moveSpeed * Time.deltaTime);
             }
-            charController.Move(moveDirection * moveSpeed * Time.deltaTime);
+            
         }
 
         public void CalculateJump()
