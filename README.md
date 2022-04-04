@@ -1,5 +1,5 @@
-# 3DPlatformer
+# Base 3rd-Person Player Controller
 
 
-*work in progress*
+*A 3rd-Person player controller that is simple to understand and easy to build off for future mechanics*
 
