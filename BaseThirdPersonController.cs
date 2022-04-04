@@ -47,7 +47,7 @@ namespace ThirdPersonPrototype
 
         private void MovePlayer()
         {
-            ///// Initialize /////
+            ///// Grounded Check /////
 
             //Check if the player is grounded
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundLayer);
