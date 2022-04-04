@@ -86,7 +86,7 @@ namespace ThirdPersonPrototype
             //Add vertical velocity when the jump button is pressed and player is grounded (using Input.GetButtonDown(""))
             if (userInput.JumpPressed() && isGrounded)
             {
-                velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
+                velocity.y = Mathf.Sqrt(jumpForce * -3f * gravity);
             }
 
             //Add gravity to vertical velocity
