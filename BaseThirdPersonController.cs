@@ -30,7 +30,7 @@ namespace ThirdPersonPrototype
         [HideInInspector] public Vector3 velocity;
         [HideInInspector] public bool isGrounded;
 
-        // Start is called before the first frame update
+        // Awake is called before Start
         void Awake()
         {
             //Get components on awake
