@@ -52,7 +52,7 @@ namespace ThirdPersonPrototype
             //Check if the player is grounded
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundLayer);
 
-            //Reset velocity when grounded
+            //Reset velocity when grounded and hold player to ground
             if (isGrounded && velocity.y < 0)
             {
                 velocity.y = -1f;
@@ -60,7 +60,7 @@ namespace ThirdPersonPrototype
 
             ///// Horizontal Movement /////
 
-            //Set a Vector3 based on user's input
+            //Set a Vector3 based on user's input (using Input.GetAxisRaw("") for each axis)
             direction = new Vector3(userInput.xInput, 0f, userInput.zInput).normalized;
 
             //If there is user input, get angles and move player
@@ -83,7 +83,7 @@ namespace ThirdPersonPrototype
 
             ///// Vertical Movement /////
 
-            //Add vertical velocity when the jump button is pressed and player is grounded
+            //Add vertical velocity when the jump button is pressed and player is grounded (using Input.GetButtonDown(""))
             if (userInput.JumpPressed() && isGrounded)
             {
                 velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
