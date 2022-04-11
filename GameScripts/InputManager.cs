@@ -28,24 +28,5 @@ namespace ThirdPersonPrototype
                 return false;
         }
 
-        public bool SprintPressed()
-        {
-            if (Input.GetButton(ConstantManager.FIRE3))
-            {
-                return true;
-            }
-            else
-                return false;
-        }
-
-        public bool GroundPoundPressed()
-        {
-            if (Input.GetButtonDown(ConstantManager.FIRE1))
-            {
-                return true;
-            }
-            else
-                return false;
-        }
     }
 }
