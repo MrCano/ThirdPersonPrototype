@@ -6,10 +6,8 @@ namespace ThirdPersonPrototype
 {
     public class InputManager : MonoBehaviour
     {
-        [HideInInspector]
-        public float xInput;
-        [HideInInspector]
-        public float zInput;
+        [HideInInspector] public float xInput;
+        [HideInInspector] public float zInput;
 
 
         void Update()
