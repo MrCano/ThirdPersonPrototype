@@ -11,11 +11,9 @@ namespace ThirdPersonPrototype
         private Camera cam;
 
         [SerializeField] private float moveSpeed = 5f;
-        [SerializeField] private float sprintSpeed = 10f;
         [SerializeField] private float turnSmoothing = 0.2f;
         [SerializeField] private float jumpForce = 3f;
         [SerializeField] private float gravityModifier = 2f;
-        [SerializeField] private float groundPoundModifier = 8f;
         [SerializeField] private Transform groundCheck;
         [SerializeField] private float groundDistance = 0.2f;
         [SerializeField] private LayerMask groundLayer;
@@ -23,8 +21,7 @@ namespace ThirdPersonPrototype
         private float gravity = -9.81f;
         private float turnSmoothSpeed;
 
-        //UI Debug
-        [HideInInspector] public bool hasJumped;
+        //Used for UI debug
         [HideInInspector] public Vector3 direction;
         [HideInInspector] public Vector3 moveDir;
         [HideInInspector] public Vector3 velocity;
