@@ -14,8 +14,8 @@ namespace ThirdPersonPrototype
         [SerializeField] private float turnSmoothing = 0.2f;
         [SerializeField] private float jumpForce = 3f;
         [SerializeField] private float gravityModifier = 2f;
+		[SerializeField] private float groundDistance = 0.2f;
         [SerializeField] private Transform groundCheck;
-        [SerializeField] private float groundDistance = 0.2f;
         [SerializeField] private LayerMask groundLayer;
 
         private float gravity = -9.81f;
